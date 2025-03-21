@@ -1,0 +1,13 @@
+name: 'TSRun Profiler'
+description: 'Insert this action to profile a pipeline'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node20'
+  main: 'packages/agent/dist/github-actions/index.js'
